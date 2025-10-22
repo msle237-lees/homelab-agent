@@ -48,7 +48,7 @@ try:
 except Exception:
     pass
 
-BASE_URL = os.getenv("HOMELAB_DB_BASE_URL", "http://cluster-1-pi5:8000").rstrip("/")
+BASE_URL = os.getenv("HOMELAB_DB_BASE_URL", "http://thinkpad:8090").rstrip("/")
 API_PREFIX = os.getenv("HOMELAB_DB_API_PREFIX", "/api/v1").rstrip("/")
 ENDPOINT = os.getenv("HOMELAB_DB_ENDPOINT", "/metrics/")
 SERVER_NAME = os.getenv("SERVER_NAME", os.uname().nodename if hasattr(os, "uname") else "unknown")
